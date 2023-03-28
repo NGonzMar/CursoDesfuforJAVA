@@ -8,7 +8,7 @@ public class LineaFactura {
 		double precio = 5.4;
 		double importe = cantidad * unidades * precio;
 		double total = importe * 1.21;
-		int iva = (int) (importe * 0.21);
+		double iva = (double) (importe * 0.21);
 
 		System.out.println("Cantidad: " + cantidad);
 		System.out.println("Unidades: " + unidades);
