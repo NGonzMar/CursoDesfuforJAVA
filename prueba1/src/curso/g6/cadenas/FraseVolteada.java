@@ -4,74 +4,80 @@ import java.util.Iterator;
 
 public class FraseVolteada {
 	public static void main(String[] args) {
-		
-		//Imprimir la frase escrita por argumentos		
+					
+		//FASE 1
 		String entrada = "";
-		int lg = args.length;
-		int a;
-
-		for (a = 0; a < lg; a++) {
-		    entrada += args[a] + " ";
+		for (int i = 0; i < args.length; i++) {
+			entrada += args[i] + " ";
 		}
-
-		System.out.println("Fase 1: " + entrada);
-
-		
-		//Fase 2 (sin String)
-		System.out.println("Fase 2 (sin String): ");
-		int longitud = entrada.length();
+		System.out.println("Fase 1 - " + entrada);
 
 		
-		for (a = longitud - 1; a >= 0; a--) { 
-		    System.out.print(entrada.charAt(a));
+		//FASE 2
+		String volteada = "";
+		for (int i = entrada.length() - 1; i >= 0; i--) {
+			volteada += entrada.charAt(i);
 		}
+		System.out.println("Fase 2 - " + volteada);
 
-		System.out.println();
-
+		
+		//FASE 3
+		String resultado = "";
+		for (int i = 0; i < entrada.length(); i++) {
 			
-		//Fase 2 (con String)
-		String salida = "";
-		for (a = longitud - 1; a >= 0; a--) {
-			salida += entrada.charAt(a);
+			switch (entrada.charAt(i)) {
 			
-		}
-		
-		System.out.println("Fase 2 (con String): " + salida);
-		
-		
-		//Fase 3 sustituir letras por numeros 
-		String resul = "";
-		
-		for (int j = longitud - 1; j >= 0; j--) {
-			switch (entrada.charAt(j)) {
-			
+			case 'A':
 			case 'a':
-				resul += "4";
+				resultado += "4";
 				break;
 				
+			case 'E':
 			case 'e':
-				resul += "3";
+				resultado += "3";
 				break;
 				
+			case 'I':
 			case 'i':
-				resul += "1";
+				resultado += "1";
 				break;
 				
+			case 'O':
 			case 'o':
-				resul += "0";
+				resultado += "0";
 				break;
 				
+			case 'U':
 			case 'u':
-				resul += "9";
+				resultado += "9";
 				break;
 				
 			default:
-				resul += entrada.charAt(j);
+				resultado += entrada.charAt(i);
 				break;
+				
 			}
 		}
-		
-		System.out.println("Fase 3: " + resul);
+		System.out.println("Fase 3 - " + resultado);
 
+		
+		//FASE 4
+		char bus = entrada.charAt(0);
+		System.out.print("Fase 4 - ");
+		for (int i = 1; (entrada + bus).charAt(i) != bus; i++) {
+			System.out.print(entrada.charAt(i));
+		}
+		System.out.println();
+
+		
+		//FASE 5
+		entrada += (char) 0;
+		int pos = 0;
+		String salida1 = "";
+		
+		while (entrada.charAt(pos) != (char) 0) {
+			salida1 = entrada.charAt(pos++) + salida1;
+		}
+		System.out.println("Fase 5 - " + salida1);
 	}
 }
