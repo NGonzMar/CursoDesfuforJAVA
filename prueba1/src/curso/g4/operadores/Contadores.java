@@ -1,4 +1,4 @@
-package com.rf.demo;
+package curso.g4.operadores;
 
 public class Contadores {
 

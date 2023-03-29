@@ -1,4 +1,4 @@
-package com.rf.demo;
+package curso.g5.bucles;
 
 /**
  * Dibuja un cuadrado, como en la imagen que acompaña, con ocho * de lado.

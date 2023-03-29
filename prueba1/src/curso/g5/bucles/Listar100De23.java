@@ -1,4 +1,4 @@
-package com.rf.demo;
+package curso.g5.bucles;
 
 /**
  * Listar números de 100 al 0 de 23 en 23

@@ -1,4 +1,4 @@
-package com.rf.demo;
+package curso.g5.bucles;
 
 /**
  * Crear una variable (nota) con el valor 6, y decidir el texto 

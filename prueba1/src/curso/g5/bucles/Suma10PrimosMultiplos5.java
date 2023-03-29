@@ -1,4 +1,4 @@
-package com.rf.demo;
+package curso.g5.bucles;
 
 /**
  * Calcular la suma de los primeros 10 números múltiplos de 5

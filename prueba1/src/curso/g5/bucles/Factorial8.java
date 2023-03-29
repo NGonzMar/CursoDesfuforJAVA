@@ -1,4 +1,4 @@
-package com.rf.demo;
+package curso.g5.bucles;
 
 /**
  * Calcular el factorial del numero 8

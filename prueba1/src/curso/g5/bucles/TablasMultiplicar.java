@@ -1,4 +1,4 @@
-package com.rf.demo;
+package curso.g5.bucles;
 
 /**
  * Presentar en consola las tablas de multiplicar del 1 al 10

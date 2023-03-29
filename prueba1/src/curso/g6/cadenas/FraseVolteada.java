@@ -1,4 +1,4 @@
-package com.rf.demo;
+package curso.g6.cadenas;
 
 import java.util.Iterator;
 

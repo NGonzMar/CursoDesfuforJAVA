@@ -1,4 +1,4 @@
-package com.rf.demo;
+package curso.g5.bucles;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.rf.demo;
+package curso.g5.bucles;
 
 /**
  * Cargar dos variables int  con los valores 10 y 20, e indicar cual es mayor, 

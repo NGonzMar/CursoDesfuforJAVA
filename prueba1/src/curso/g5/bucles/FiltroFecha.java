@@ -1,4 +1,4 @@
-package com.rf.demo;
+package curso.g5.bucles;
 /**
  * Definir día=20, mes =8,año = 2015, y luego añadir 
  * el código para comprobar que la fecha es correcta.
