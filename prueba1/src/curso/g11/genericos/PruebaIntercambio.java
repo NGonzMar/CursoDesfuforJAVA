@@ -12,4 +12,6 @@ public class PruebaIntercambio {
         
         System.out.println("\nINTERCAMBIO NOMBRES: \n1 - " + nombres.getUno() + "\n2 - " + nombres.getDos());
     }
+    
+    
 }
